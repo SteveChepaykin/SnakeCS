@@ -1,0 +1,16 @@
+C:\Projects\SnakeCS\bin\Debug\net5.0\SnakeCS.exe
+C:\Projects\SnakeCS\bin\Debug\net5.0\SnakeCS.deps.json
+C:\Projects\SnakeCS\bin\Debug\net5.0\SnakeCS.runtimeconfig.json
+C:\Projects\SnakeCS\bin\Debug\net5.0\SnakeCS.runtimeconfig.dev.json
+C:\Projects\SnakeCS\bin\Debug\net5.0\SnakeCS.dll
+C:\Projects\SnakeCS\bin\Debug\net5.0\ref\SnakeCS.dll
+C:\Projects\SnakeCS\bin\Debug\net5.0\SnakeCS.pdb
+C:\Projects\SnakeCS\obj\Debug\net5.0\SnakeCS.csproj.AssemblyReference.cache
+C:\Projects\SnakeCS\obj\Debug\net5.0\SnakeCS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\SnakeCS\obj\Debug\net5.0\SnakeCS.AssemblyInfoInputs.cache
+C:\Projects\SnakeCS\obj\Debug\net5.0\SnakeCS.AssemblyInfo.cs
+C:\Projects\SnakeCS\obj\Debug\net5.0\SnakeCS.csproj.CoreCompileInputs.cache
+C:\Projects\SnakeCS\obj\Debug\net5.0\SnakeCS.dll
+C:\Projects\SnakeCS\obj\Debug\net5.0\ref\SnakeCS.dll
+C:\Projects\SnakeCS\obj\Debug\net5.0\SnakeCS.pdb
+C:\Projects\SnakeCS\obj\Debug\net5.0\SnakeCS.genruntimeconfig.cache

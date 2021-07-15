@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\schep\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\schep\\.nuget\\packages"
+    ]
+  }
+}
