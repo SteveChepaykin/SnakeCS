@@ -10,14 +10,8 @@ namespace SnakeCS
     {
         static void Main(string[] args)
         {
-            DotClass dot = new DotClass();
-            dot.x = 20;
-            dot.y = 4;
-            dot.sym = '*';
-            DotClass dot2 = new DotClass();
-            dot2.x = 4;
-            dot2.y = 5;
-            dot2.sym = '#';
+            DotClass dot = new DotClass(20, 4, '*');
+            DotClass dot2 = new DotClass(4, 5, '#');
 
             dot.Draw();
             dot2.Draw();
