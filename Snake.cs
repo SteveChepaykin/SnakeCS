@@ -10,25 +10,19 @@ namespace SnakeCS
     {
         static void Main(string[] args)
         {
-            int x1 = 20;
-            int y1 = 4;
+            DotClass dot = new DotClass();
+            dot.x = 20;
+            dot.y = 4;
+            dot.sym = '*';
+            DotClass dot2 = new DotClass();
+            dot2.x = 4;
+            dot2.y = 5;
+            dot2.sym = '#';
 
-            int x2 = 4;
-            int y2 = 5;
-
-            char sym1 = '*';
-            char sym2 = '#';
-
-            Draw(x1, y1, sym1);
-            Draw(x2, y2, sym2);
+            dot.Draw();
+            dot2.Draw();
 
             Console.ReadLine();
-        }
-
-        static void Draw(int x, int y, char sym)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(sym);
         }
     }
 }
