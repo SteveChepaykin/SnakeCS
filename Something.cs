@@ -11,18 +11,40 @@ namespace SnakeCS
     {
         static void Main(string[] args)
         {
-            DotClass dot = new DotClass(20, 4, '*');
+            //Console.SetBufferSize(80, 25);
 
+            DotClass dot = new DotClass(20, 4, '*');
             Snakke snake = new Snakke(dot, 6, Direction.RIGHT);
+            snake.Draw();
+
+            FoodCreator fc = new FoodCreator(80, 25, '$');
+            DotClass food = fc.CreateFood();
+            food.Draw();
+
+            Walls walls = new Walls(80, 25);
+            walls.Draw();
+
             while(true)
             {
+                if(walls.IsHit(snake) || snake.IsHitTail())
+                {
+                    Console.Clear();
+                    break;
+                }
+                if(snake.Eat(food))
+                {
+                    food = fc.CreateFood();
+                    food.Draw();
+                }
+                else snake.Move();
+
+                Thread.Sleep(100);
+
                 if(Console.KeyAvailable)
                 {
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.HandleKey(key.Key);
                 }
-                Thread.Sleep(100);
-                snake.Draw();
             }
         }
     }

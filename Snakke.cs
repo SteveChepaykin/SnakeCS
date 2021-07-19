@@ -47,5 +47,27 @@ namespace SnakeCS
             else if(key == ConsoleKey.UpArrow) dir = Direction.UP;
             else if(key == ConsoleKey.DownArrow) dir = Direction.DOWN;
         }
+
+        internal bool Eat(DotClass food)
+        {
+            DotClass head = GetNextPoint();
+            if(head.IsHit(food))
+            {
+                food.sym = head.sym;
+                plist.Add(food);
+                return true;
+            }
+            else return false;
+        }
+
+        public bool IsHitTail()
+        {
+            var head = plist.Last();
+            for(int i = 0; i <= plist.Count - 2; i++)
+            {
+                if(head.IsHit(plist[i])) return true;
+            }
+            return false;
+        }
     }
 }

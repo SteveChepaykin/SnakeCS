@@ -45,5 +45,10 @@ namespace SnakeCS
             sym = ' ';
             Draw();
         }
+
+        public bool IsHit(DotClass food)
+        {
+            return this.x == food.x && this.y == food.y;
+        }
     }
 }

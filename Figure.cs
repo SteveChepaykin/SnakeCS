@@ -10,12 +10,30 @@ namespace SnakeCS
     {
         public List<DotClass> plist;
 
-        public void Draw()
+        public virtual void Draw()
         {
             foreach(DotClass i in plist)
             {
                 i.Draw();
             }
+        }
+
+        public bool IsHit(Figure fig)
+        {
+            foreach(var p in plist)
+            {
+                if(fig.IsHit(p)) return true;
+            }
+            return false;
+        }
+
+        private bool IsHit(DotClass dot)
+        {
+            foreach(var d in plist)
+            {
+                if(d.IsHit(dot)) return true;
+            }
+            return false;
         }
     }
 }
